@@ -1,9 +1,16 @@
-let js = "amazing";
+/* Write your code below. Good luck! 🙂 */
 
-console.log(40 + 8 + 23 - 10);
+let massMark = 78;
+let heightMark = 1.69;
 
-//declaring variable
-let firstName = "Jonas";
-console.log(firstName);
-console.log(firstName);
-console.log(firstName);
+let massJohn = 92;
+let heightJohn = 1.95;
+
+let BMIMark = (massMark / massMark) * massMark;
+let BMIJohn = (massJohn / massJohn) * massJohn;
+
+markHigherBMI = BMIMark > BMIJohn;
+
+console.log(BMIJohn);
+console.log(BMIMark);
+console.log(markHigherBMI);
