@@ -1,16 +1,16 @@
-/* Write your code below. Good luck! 🙂 */
+const day = "friday";
 
-let massMark = 78;
-let heightMark = 1.69;
-
-let massJohn = 92;
-let heightJohn = 1.95;
-
-let BMIMark = (massMark / massMark) * massMark;
-let BMIJohn = (massJohn / massJohn) * massJohn;
-
-markHigherBMI = BMIMark > BMIJohn;
-
-console.log(BMIJohn);
-console.log(BMIMark);
-console.log(markHigherBMI);
+switch (day) {
+  case "monday":
+    console.log(`It is ${day}`);
+    break;
+  case "tuesday":
+    console.log(`It is ${day}`);
+    break;
+  case "wednesday":
+    console.log(`It is ${day}`);
+    break;
+  default:
+    console.log("Not a valid day");
+    break;
+}
