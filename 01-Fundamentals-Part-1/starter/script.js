@@ -17,6 +17,31 @@
 //arrow functions
 
 //reference point
-const calcAge2 = function (birthYear) {
-  return 2026 - birthYear;
-};
+
+// function calcAverage(a, b, c) {
+//   return a + b + c / 3;
+// }
+
+// // function avgDolphins(scoreDolphins) {
+// //   scoreDolphins(44, 23, 71);
+// //   avgDolphins = calcAverage(scoreDolphins);
+// // }
+
+// function calcAverage(a, b, c) {
+//   return scoreDolphins(a + b, c) / 3;
+// }
+
+// function calcAverage(a, b, c) {
+//   return scoreKoalas(a, b, c) / 3;
+// }
+
+// function scoreDolphins(a, b, c) {
+//   return a + b + c;
+// }
+
+// function scoreKoalas(a, b, c) {
+//   return a + b + c;
+// }
+
+// console.log(scoreDolphins(44, 23, 71));
+// console.log(scoreKoalas(65, 54, 49));
