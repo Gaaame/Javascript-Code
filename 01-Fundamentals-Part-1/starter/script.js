@@ -1,47 +1,17 @@
-// //function declaration
+const calcAverage = (a, b, c) => {
+  return (a + b + c) / 3;
+};
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
 
-// function calcAge1(birthYear) {
-//   return 2026 - birthYear;
-// }
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins >= avgKoalas && avgDolphins > avgKoalas * 2) {
+    console.log(`Team wins (${avgDolphins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= avgDolphins && avgKoalas > avgDolphins * 2) {
+    console.log(`Team wins (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    console.log(`No team wins...`);
+  }
+}
 
-// const age1 = calcAge1(1991);
-
-// //function expression
-// const calcAge2 = function (birthYear) {
-//   return 2026 - birthYear;
-// };
-
-// const age2 = calcAge2(1999);
-// console.log(age1, age2);
-
-//arrow functions
-
-//reference point
-
-// function calcAverage(a, b, c) {
-//   return a + b + c / 3;
-// }
-
-// // function avgDolphins(scoreDolphins) {
-// //   scoreDolphins(44, 23, 71);
-// //   avgDolphins = calcAverage(scoreDolphins);
-// // }
-
-// function calcAverage(a, b, c) {
-//   return scoreDolphins(a + b, c) / 3;
-// }
-
-// function calcAverage(a, b, c) {
-//   return scoreKoalas(a, b, c) / 3;
-// }
-
-// function scoreDolphins(a, b, c) {
-//   return a + b + c;
-// }
-
-// function scoreKoalas(a, b, c) {
-//   return a + b + c;
-// }
-
-// console.log(scoreDolphins(44, 23, 71));
-// console.log(scoreKoalas(65, 54, 49));
+checkWinner(scoreDolphins, scoreKoalas);
