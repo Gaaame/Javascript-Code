@@ -1,8 +1,15 @@
-function fruitProcessor(apples, oranges) {
-  console.log(apples, oranges);
-  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-  return juice;
+//function declaration
+
+function calcAge1(birthYear) {
+  return 2026 - birthYear;
 }
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
+const age1 = calcAge1(1991);
+
+//function expression
+const calcAge2 = function (birthYear) {
+  return 2026 - birthYear;
+};
+
+const age2 = calcAge2(1999);
+console.log(age1, age2);
