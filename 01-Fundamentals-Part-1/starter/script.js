@@ -62,7 +62,23 @@
 // console.log(ages);
 
 //BASIC ARRAY OPERATIONS
+
 const friends = [`Michael`, "Steven", "Peter"];
+
+//PUSH - Add new element to END of the array
 const newLength = friends.push("Jay");
 console.log(friends);
 console.log(newLength);
+
+//UNSHIFT - Add new element to START of the array
+friends.unshift("John");
+console.log(friends);
+
+//POP - Remove element on end of array
+friends.pop(friends);
+friends.pop(friends);
+console.log(friends);
+
+//SHIFT - Removes last element of array
+friends.shift();
+console.log(friends);
