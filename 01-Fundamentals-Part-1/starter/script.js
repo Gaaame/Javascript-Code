@@ -62,3 +62,7 @@
 // console.log(ages);
 
 //BASIC ARRAY OPERATIONS
+const friends = [`Michael`, "Steven", "Peter"];
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
