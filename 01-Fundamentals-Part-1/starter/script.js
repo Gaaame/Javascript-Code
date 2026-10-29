@@ -19,44 +19,46 @@
 
 //ARRAYS
 
-const friends = ["Michael", "Steven", "Peter"];
-console.log(friends);
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
 
-const numbers = new Array(1, 2, 3, 4, 5);
-console.log(numbers);
+// const numbers = new Array(1, 2, 3, 4, 5);
+// console.log(numbers);
 
-//get first element in array by index
-console.log(friends[0]);
+// //get first element in array by index
+// console.log(friends[0]);
 
-//count number of elements in the array
-console.log(friends.length);
+// //count number of elements in the array
+// console.log(friends.length);
 
-//get last element of array
-console.log(friends[friends.length - 1]);
+// //get last element of array
+// console.log(friends[friends.length - 1]);
 
 //mutate the array
-friends[2] = "Jay";
+// friends[2] = "Jay";
 
-const firstname = "Jonas";
-const jonas = ["Jonas", "Smith", 2033 - 1991, "teacher", friends];
-console.log(jonas);
+// const firstname = "Jonas";
+// const jonas = ["Jonas", "Smith", 2033 - 1991, "teacher", friends];
+// console.log(jonas);
 
 //excericse
-const calcAge = function (birthYear) {
-  return 2026 - birthYear;
-};
+// const calcAge = function (birthYear) {
+//   return 2026 - birthYear;
+// };
 
-const years = [1990, 1967, 2002, 2010, 2018];
+// const years = [1990, 1967, 2002, 2010, 2018];
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3);
 
-const ages = [
-  calcAge(years[0]),
-  calcAge(years[1]),
-  calcAge(years[years.length - 1]),
-];
+// const ages = [
+//   calcAge(years[0]),
+//   calcAge(years[1]),
+//   calcAge(years[years.length - 1]),
+// ];
 
-console.log(ages);
+// console.log(ages);
+
+//BASIC ARRAY OPERATIONS
