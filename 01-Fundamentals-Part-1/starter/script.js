@@ -63,22 +63,36 @@
 
 //BASIC ARRAY OPERATIONS
 
-const friends = [`Michael`, "Steven", "Peter"];
+// const friends = [`Michael`, "Steven", "Peter"];
 
-//PUSH - Add new element to END of the array
-const newLength = friends.push("Jay");
-console.log(friends);
-console.log(newLength);
+// //PUSH - Add new element to END of the array
+// const newLength = friends.push("Jay");
+// console.log(friends);
+// console.log(newLength);
 
-//UNSHIFT - Add new element to START of the array
-friends.unshift("John");
-console.log(friends);
+// //UNSHIFT - Add new element to START of the array
+// friends.unshift("John");
+// console.log(friends);
 
-//POP - Remove element on end of array
-friends.pop(friends);
-friends.pop(friends);
-console.log(friends);
+// //POP - Remove element on end of array
+// friends.pop(friends);
+// friends.pop(friends);
+// console.log(friends);
 
-//SHIFT - Removes last element of array
-friends.shift();
-console.log(friends);
+// //SHIFT - Removes last element of array
+// friends.shift();
+// console.log(friends);
+
+//EXCERCISE
+/* Write your code below. Good luck! 🙂 */
+
+function calcTip(bill) {
+  if (bill >= 50 && bill <= 300) {
+    bill * 0.15;
+    console.log(`the bill is totaled to ${bill}`)
+  } else {
+    console.log(bill * 0.2);
+  }
+}
+
+calcTip(300);
