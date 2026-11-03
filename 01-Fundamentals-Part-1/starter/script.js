@@ -86,13 +86,26 @@
 //EXCERCISE
 /* Write your code below. Good luck! 🙂 */
 
+// function calcTip(bill) {
+//   if (bill >= 50 && bill <= 300) {
+//     return bill * 0.15;
+//   } else {
+//     return bill * 0.2;
+//   }
+// }
+
+const bills = [125, 555, 44];
+
 function calcTip(bill) {
   if (bill >= 50 && bill <= 300) {
-    bill * 0.15;
-    console.log(`the bill is totaled to ${bill}`)
+    return bill * 0.15;
   } else {
-    console.log(bill * 0.2);
+    return bill * 0.2;
   }
 }
 
-calcTip(300);
+const tips = bills.map(function (bill) {
+  return calcTip(bill);
+});
+
+console.log()
