@@ -94,13 +94,15 @@
 //   }
 // }
 
+//CODING EXCERCISE 6
 const bills = [125, 555, 44];
+const tipRates = [0.15, 0.2];
 
 function calcTip(bill) {
   if (bill >= 50 && bill <= 300) {
-    return bill * 0.15;
+    return bill * tipRates[0];
   } else {
-    return bill * 0.2;
+    return bill * tipRates[1];
   }
 }
 
@@ -108,4 +110,10 @@ const tips = bills.map(function (bill) {
   return calcTip(bill);
 });
 
-console.log()
+const totals = bills.map(function (bill, index) {
+  return bill + tips[index];
+});
+
+console.log(bills);
+console.log(tips);
+console.log(totals);
