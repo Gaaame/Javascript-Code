@@ -141,17 +141,14 @@ const jonas = {
   friends: ["Michael", "Peter", "Steven"],
 };
 
-console.log(jonas);
-
-//Dot notation
-console.log(jonas.age);
-
-//Bracket notation
-//Useful when using properties with expressions
-console.log(jonas["lastName"]);
-
-const nameKey = "Name";
-
-//instead of needing exact property, you can set a key variable to make calling faster
-console.log(jonas["first" + nameKey]);
-console.log(jonas["last" + nameKey]);
+//challenge
+console.log(
+  jonas.firstName +
+    ` ` +
+    "has " +
+    jonas.friends.length +
+    ` ` +
+    "friends, and his best friend is called" +
+    ` ` +
+    jonas.friends[0],
+);
