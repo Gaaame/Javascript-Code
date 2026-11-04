@@ -84,7 +84,6 @@
 // console.log(friends);
 
 //EXCERCISE
-/* Write your code below. Good luck! 🙂 */
 
 // function calcTip(bill) {
 //   if (bill >= 50 && bill <= 300) {
@@ -95,25 +94,49 @@
 // }
 
 //CODING EXCERCISE 6
-const bills = [125, 555, 44];
-const tipRates = [0.15, 0.2];
+// const bills = [125, 555, 44];
+// const tipRates = [0.15, 0.2];
 
-function calcTip(bill) {
-  if (bill >= 50 && bill <= 300) {
-    return bill * tipRates[0];
-  } else {
-    return bill * tipRates[1];
-  }
-}
+// function calcTip(bill) {
+//   if (bill >= 50 && bill <= 300) {
+//     return bill * tipRates[0];
+//   } else {
+//     return bill * tipRates[1];
+//   }
+// }
 
-const tips = bills.map(function (bill) {
-  return calcTip(bill);
-});
+// const tips = bills.map(function (bill) {
+//   return calcTip(bill);
+// });
 
-const totals = bills.map(function (bill, index) {
-  return bill + tips[index];
-});
+// const totals = bills.map(function (bill, index) {
+//   return bill + tips[index];
+// });
 
-console.log(bills);
-console.log(tips);
-console.log(totals);
+// console.log(bills);
+// console.log(tips);
+// console.log(totals);
+
+//OBJECTS
+
+//Array
+
+const JonasArray = [
+  "jonas",
+  "smith",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+//VS
+
+//Object
+const jonas = {
+  //key value: value
+  firstName: "Jonas",
+  lastName: "Smith",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
