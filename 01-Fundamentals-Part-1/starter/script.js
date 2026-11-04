@@ -121,13 +121,13 @@
 
 //Array
 
-const JonasArray = [
-  "jonas",
-  "smith",
-  2037 - 1991,
-  "teacher",
-  ["Michael", "Peter", "Steven"],
-];
+// const JonasArray = [
+//   "jonas",
+//   "smith",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+// ];
 
 //VS
 
@@ -140,3 +140,18 @@ const jonas = {
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
 };
+
+console.log(jonas);
+
+//Dot notation
+console.log(jonas.age);
+
+//Bracket notation
+//Useful when using properties with expressions
+console.log(jonas["lastName"]);
+
+const nameKey = "Name";
+
+//instead of needing exact property, you can set a key variable to make calling faster
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
