@@ -17,72 +17,6 @@
 
 // checkWinner(scoreDolphins, scoreKoalas);
 
-//ARRAYS
-
-// const friends = ["Michael", "Steven", "Peter"];
-// console.log(friends);
-
-// const numbers = new Array(1, 2, 3, 4, 5);
-// console.log(numbers);
-
-// //get first element in array by index
-// console.log(friends[0]);
-
-// //count number of elements in the array
-// console.log(friends.length);
-
-// //get last element of array
-// console.log(friends[friends.length - 1]);
-
-//mutate the array
-// friends[2] = "Jay";
-
-// const firstname = "Jonas";
-// const jonas = ["Jonas", "Smith", 2033 - 1991, "teacher", friends];
-// console.log(jonas);
-
-//excericse
-// const calcAge = function (birthYear) {
-//   return 2026 - birthYear;
-// };
-
-// const years = [1990, 1967, 2002, 2010, 2018];
-
-// const age1 = calcAge(years[0]);
-// const age2 = calcAge(years[1]);
-// const age3 = calcAge(years[years.length - 1]);
-// console.log(age1, age2, age3);
-
-// const ages = [
-//   calcAge(years[0]),
-//   calcAge(years[1]),
-//   calcAge(years[years.length - 1]),
-// ];
-
-// console.log(ages);
-
-//BASIC ARRAY OPERATIONS
-
-// const friends = [`Michael`, "Steven", "Peter"];
-
-// //PUSH - Add new element to END of the array
-// const newLength = friends.push("Jay");
-// console.log(friends);
-// console.log(newLength);
-
-// //UNSHIFT - Add new element to START of the array
-// friends.unshift("John");
-// console.log(friends);
-
-// //POP - Remove element on end of array
-// friends.pop(friends);
-// friends.pop(friends);
-// console.log(friends);
-
-// //SHIFT - Removes last element of array
-// friends.shift();
-// console.log(friends);
-
 //EXCERCISE
 
 // function calcTip(bill) {
@@ -117,21 +51,6 @@
 // console.log(tips);
 // console.log(totals);
 
-//OBJECTS
-
-//Array
-
-// const JonasArray = [
-//   "jonas",
-//   "smith",
-//   2037 - 1991,
-//   "teacher",
-//   ["Michael", "Peter", "Steven"],
-// ];
-
-//VS
-
-//Object
 const jonas = {
   //key value: value
   firstName: "Jonas",
@@ -139,16 +58,12 @@ const jonas = {
   age: 2037 - 1991,
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  //function within object aka METHOD
+  calcAge: function (birthyear) {
+    return 2037 - birthyear;
+  },
 };
 
-//challenge
-console.log(
-  jonas.firstName +
-    ` ` +
-    "has " +
-    jonas.friends.length +
-    ` ` +
-    "friends, and his best friend is called" +
-    ` ` +
-    jonas.friends[0],
-);
+jonas.calcAge(1991);
