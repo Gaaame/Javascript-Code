@@ -61,15 +61,38 @@ const jonas = {
   friends: ["Michael", "Peter", "Steven"],
   hasDriversLicense: true,
 
-  //function within object aka METHOD
-  // calcAge: function (birthyear) {
-  //   return 2037 - birthyear;
-  // },
-
+  //calcAge Method
   calcAge: function () {
     this.age = 2037 - this.birthyear;
     return this.age;
   },
+
+  //getSummaru method
+  getSummary: function () {
+    if (this.hasDriversLicense == true) {
+      console.log(
+        "Jonas is a " +
+          this.age +
+          " year old" +
+          ` ` +
+          this.job +
+          ` ` +
+          "and he has a drivers license",
+      );
+    } else {
+      console.log(
+        "Jonas is a " +
+          this.age +
+          " year old" +
+          ` ` +
+          this.job +
+          ` ` +
+          "and he does not have a drivers license",
+      );
+    }
+  },
 };
 
 // Challenge
+
+console.log(jonas.getSummary());
