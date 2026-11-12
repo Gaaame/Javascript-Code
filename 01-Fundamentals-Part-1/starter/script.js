@@ -55,15 +55,21 @@ const jonas = {
   //key value: value
   firstName: "Jonas",
   lastName: "Smith",
+  birthyear: 1991,
   age: 2037 - 1991,
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
   hasDriversLicense: true,
 
   //function within object aka METHOD
-  calcAge: function (birthyear) {
-    return 2037 - birthyear;
+  // calcAge: function (birthyear) {
+  //   return 2037 - birthyear;
+  // },
+
+  calcAge: function () {
+    console.log(this);
+    return 2037 - this.birthyear;
   },
 };
 
-console.log(jonas.calcAge(1991));
+console.log(jonas.calcAge());
