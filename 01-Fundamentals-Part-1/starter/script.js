@@ -67,9 +67,9 @@ const jonas = {
   // },
 
   calcAge: function () {
-    console.log(this);
-    return 2037 - this.birthyear;
+    this.age = 2037 - this.birthyear;
+    return this.age;
   },
 };
 
-console.log(jonas.calcAge());
+// Challenge
