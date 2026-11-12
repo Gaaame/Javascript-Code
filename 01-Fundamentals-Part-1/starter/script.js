@@ -51,48 +51,51 @@
 // console.log(tips);
 // console.log(totals);
 
-const jonas = {
-  //key value: value
-  firstName: "Jonas",
-  lastName: "Smith",
-  birthyear: 1991,
-  age: 2037 - 1991,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Steven"],
-  hasDriversLicense: true,
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   birthYear: 1991,
+//   job: "teacher",
+//   hasDriversLicense: true,
 
-  //calcAge Method
-  calcAge: function () {
-    this.age = 2037 - this.birthyear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
 
-  //getSummaru method
-  getSummary: function () {
-    if (this.hasDriversLicense == true) {
-      console.log(
-        "Jonas is a " +
-          this.age +
-          " year old" +
-          ` ` +
-          this.job +
-          ` ` +
-          "and he has a drivers license",
-      );
-    } else {
-      console.log(
-        "Jonas is a " +
-          this.age +
-          " year old" +
-          ` ` +
-          this.job +
-          ` ` +
-          "and he does not have a drivers license",
-      );
-    }
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()} year-old ${this.job}, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+//   },
+// };
+
+// console.log(jonas.getSummary());
+
+// Coding Excercise
+
+const Mark = {
+  fullname: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    return this.mass / this.height ** 2;
   },
 };
 
-// Challenge
+const John = {
+  fullname: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    return this.mass / this.height ** 2;
+  },
+};
 
-console.log(jonas.getSummary());
+if (John.calcBMI() >= Mark.calcBMI()) {
+  console.log(
+    `${John.fullname}'s BMI (${John.calcBMI()}) is higher than ${Mark.fullname}'s (${Mark.calcBMI()})!`,
+  );
+} else {
+  console.log(
+    `${Mark.fullname}'s BMI (${Mark.calcBMI()}) is higher than ${John.fullname}'s (${John.calcBMI()})!`,
+  );
+}
