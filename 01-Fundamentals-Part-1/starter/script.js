@@ -72,30 +72,33 @@
 
 // Coding Excercise
 
-const Mark = {
-  fullname: "Mark Miller",
+const mark = {
+  fullName: "mark Miller",
   mass: 78,
   height: 1.69,
   calcBMI: function () {
-    return this.mass / this.height ** 2;
+    return (this.mass / this.height) * this.height;
   },
 };
 
-const John = {
-  fullname: "John Smith",
+const john = {
+  fullName: "john Smith",
   mass: 92,
   height: 1.95,
   calcBMI: function () {
-    return this.mass / this.height ** 2;
+    return (this.mass / this.height) * this.height;
   },
 };
 
-if (John.calcBMI() >= Mark.calcBMI()) {
+mark.bmi = mark.calcBMI();
+john.bmi = john.calcBMI();
+
+if (john.bmi >= mark.bmi) {
   console.log(
-    `${John.fullname}'s BMI (${John.calcBMI()}) is higher than ${Mark.fullname}'s (${Mark.calcBMI()})!`,
+    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`,
   );
 } else {
   console.log(
-    `${Mark.fullname}'s BMI (${Mark.calcBMI()}) is higher than ${John.fullname}'s (${John.calcBMI()})!`,
+    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`,
   );
 }
