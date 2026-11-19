@@ -105,6 +105,16 @@
 
 //FOR LOOP
 //Keeps running while condition is TRUE
-for (let rep = 1; rep <= 10; rep = rep++) {
-  console.log("Lifting Weights Repition");
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting Weights Repition ${rep}`);
 }
+
+//FOR LOOP + ARRAY
+const mark = {
+  fullName: "mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    return (this.mass / this.height) * this.height;
+  },
+};
