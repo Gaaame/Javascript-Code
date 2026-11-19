@@ -72,33 +72,39 @@
 
 // Coding Excercise
 
-const mark = {
-  fullName: "mark Miller",
-  mass: 78,
-  height: 1.69,
-  calcBMI: function () {
-    return (this.mass / this.height) * this.height;
-  },
-};
+// const mark = {
+//   fullName: "mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     return (this.mass / this.height) * this.height;
+//   },
+// };
 
-const john = {
-  fullName: "john Smith",
-  mass: 92,
-  height: 1.95,
-  calcBMI: function () {
-    return (this.mass / this.height) * this.height;
-  },
-};
+// const john = {
+//   fullName: "john Smith",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     return (this.mass / this.height) * this.height;
+//   },
+// };
 
-mark.bmi = mark.calcBMI();
-john.bmi = john.calcBMI();
+// mark.bmi = mark.calcBMI();
+// john.bmi = john.calcBMI();
 
-if (john.bmi >= mark.bmi) {
-  console.log(
-    `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`,
-  );
-} else {
-  console.log(
-    `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`,
-  );
+// if (john.bmi >= mark.bmi) {
+//   console.log(
+//     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`,
+//   );
+// } else {
+//   console.log(
+//     `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`,
+//   );
+// }
+
+//FOR LOOP
+//Keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep = rep++) {
+  console.log("Lifting Weights Repition");
 }
