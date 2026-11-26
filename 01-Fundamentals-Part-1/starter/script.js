@@ -105,16 +105,33 @@
 
 //FOR LOOP
 //Keeps running while condition is TRUE
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting Weights Repition ${rep}`);
-}
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting Weights Repition ${rep}`);
+// }
 
 //FOR LOOP + ARRAY
-const mark = {
-  fullName: "mark Miller",
-  mass: 78,
-  height: 1.69,
-  calcBMI: function () {
-    return (this.mass / this.height) * this.height;
-  },
-};
+// const mark = {
+//   fullName: "mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     return (this.mass / this.height) * this.height;
+//   },
+// };
+
+//LOOP THROUGH ARRAY
+
+const types = [];
+
+const jonas = [
+  "jonas",
+  "smith",
+  2037 - 1991,
+  "teacher",
+  ["jake", "peter", "mike"],
+  true,
+];
+
+for (let i = 0; i < 5; i++) {
+  console.log(jonas[i], typeof jonas[i]);
+}
