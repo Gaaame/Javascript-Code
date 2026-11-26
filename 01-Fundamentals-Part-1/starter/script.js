@@ -134,4 +134,10 @@ const jonas = [
 
 for (let i = 0; i < 5; i++) {
   console.log(jonas[i], typeof jonas[i]);
+
+  //Filling types array
+  // types[i] = typeof jonas[1];
+  types.push(typeof jonas[1]);
 }
+
+const years = [1991, 2007, 1969, 2020];
